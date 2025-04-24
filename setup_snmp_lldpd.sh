@@ -55,9 +55,9 @@ agentaddress  udp:161,udp6:[::1]:161
 # SECTION: Access Control Setup
 #
 view all    included  .1                               80
-rocommunity OND default 
-rocommunity6 OND default  
-rouser OND
+rocommunity public default 
+rocommunity6 public default  
+rouser public
 includeDir /etc/snmp/snmpd.conf.d
 EOF'
 
